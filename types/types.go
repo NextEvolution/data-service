@@ -14,6 +14,8 @@ package types
 type SellerAlbumScan struct {
 	Date int `json:"date"`
 	Products []Product `json:"products"`
+	DataVersion string `json:"data_version"`
+	Metadata interface{} `json:"metadata"`
 }
 
 type Product struct {
